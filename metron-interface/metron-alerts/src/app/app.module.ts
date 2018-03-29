@@ -45,8 +45,7 @@ import {UpdateService} from './service/update.service';
 import {MetaAlertService} from './service/meta-alert.service';
 import {MetaAlertsModule} from './alerts/meta-alerts/meta-alerts.module';
 import {SearchService} from './service/search.service';
-
-
+import {PcapModule} from './pcap/pcap.module';
 
 export function initConfig(config: ColumnNamesService) {
   return () => config.list();
@@ -69,7 +68,8 @@ export function initConfig(config: ColumnNamesService) {
     ConfigureRowsModule,
     SaveSearchModule,
     SavedSearchesModule,
-    SwitchModule
+    SwitchModule,
+    PcapModule
   ],
   providers: [{ provide: APP_INITIALIZER, useFactory: initConfig, deps: [ColumnNamesService], multi: true },
               { provide: DataSource, useClass: ElasticSearchLocalstorageImpl },

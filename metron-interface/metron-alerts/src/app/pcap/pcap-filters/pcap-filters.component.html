@@ -1,0 +1,25 @@
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+  <div class="form-inline">
+    <label for="ip_src_addr">IP Source Address</label>
+    <input name="ip_src_addr" #ip_src_addr="ngModel" class="form-control" [(ngModel)]="model.ip_src_addr">
+  </div>
+  <div class="form-inline">
+    <label for="ip_src_port">IP Source Port</label>
+    <input name="ip_src_port" #ip_src_port="ngModel" class="form-control" [(ngModel)]="model.ip_src_port">
+  </div>
+  <div class="form-inline">
+    <label for="ip_dest_addr">IP Dest Address</label>
+    <input name="ip_dest_addr" #ip_dest_addr="ngModel" class="form-control" [(ngModel)]="model.ip_dest_addr">
+  </div>
+  <div class="form-inline">
+    <label for="ip_dest_port">IP Dest Port</label>
+    <input name="ip_dest_port" #ip_dest_port="ngModel" class="form-control" [(ngModel)]="model.ip_dest_port">
+  </div>
+  
+  <div class="form-inline">
+    <label for="filter">Filter</label>
+    <input name="filter" #filter="ngModel" class="form-control" [(ngModel)]="model.filter">
+  </div>
+
+  <button type="submit" class="btn fa fa-search" [disabled]="!f.form.valid">Search</button>
+</form>
