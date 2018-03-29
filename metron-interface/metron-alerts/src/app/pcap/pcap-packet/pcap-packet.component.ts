@@ -8,8 +8,8 @@ import { PdmlPacket } from '../model/pdml'
   styleUrls: ['./pcap-packet.component.scss']
 })
 export class PcapPacketComponent implements OnInit {
-
   @Input() packet: PdmlPacket 
+
   constructor() { }
 
   ngOnInit() {
