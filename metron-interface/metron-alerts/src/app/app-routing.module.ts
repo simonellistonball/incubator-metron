@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'save-search', loadChildren: 'app/alerts/save-search/save-search.module#SaveSearchModule', canActivate: [AuthGuard]},
   { path: 'saved-searches', loadChildren: 'app/alerts/saved-searches/saved-searches.module.ts#SavedSearchesModule',
       canActivate: [AuthGuard]},
-  { path: 'pcap', loadChildren: 'app/pcap/pcap.module#PcapModule' }
+  { path: 'pcap', loadChildren: 'app/pcap/pcap.module#PcapModule', canActivate: [AuthGuard] }
 ];
 
 @NgModule({

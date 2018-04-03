@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()" #f="ngForm" class="form-inline">
+<form (ngSubmit)="onSubmit()" #f="ngForm" class="form-inline pcap-search">
   <div class="form-group">
     <label for="ip_src_addr">IP Source Address</label>
     <input name="ip_src_addr" #ip_src_addr="ngModel" class="form-control" pattern="^(?:\d{1,3}\.){3}\d{1,3}(.\d{1,2})?$" [(ngModel)]="model.ip_src_addr">
@@ -15,7 +15,7 @@
 
   <div class="form-group">
     <label for="ip_dest_port">IP Dest Port</label>
-    <input name="ip_dest_port" #ip_dest_port="ngModel" class="form-control" type="number" [(ngModel)]="model.ip_dest_port">
+    <input id="ip_dest_port" name="ip_dest_port" #ip_dest_port="ngModel" class="form-control" type="number" [(ngModel)]="model.ip_dest_port">
   </div>
 
   <div class="form-group">
@@ -24,6 +24,6 @@
   </div>
 
   <div class="form-group">
-    <button type="submit" class="btn btn-primary fa fa-search" [disabled]="!f.form.valid">Search</button>
+    <button type="submit" class="btn btn-primary btn-search" [disabled]="!f.form.valid"></button>
   </div>
 </form>
