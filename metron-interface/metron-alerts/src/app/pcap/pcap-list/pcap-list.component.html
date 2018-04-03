@@ -14,7 +14,7 @@
       <ng-container *ngFor="let packet of packets">
         <tr (click)="toggle(packet)" app-pcap-packet-line [packet]="packet"></tr>
         <tr *ngIf="packet.expanded">
-          <td colspan="6">
+          <td colspan="6" class="pcap-packet">
             <app-pcap-packet [packet]="packet"></app-pcap-packet>
           </td>
         </tr>
