@@ -1,0 +1,10 @@
+{
+	"strField": "Test",
+	"intField": 2,
+	"floatField": 1.2,
+	"fieldOut": "Test",
+	"calcOut": "2.4",
+	"stringFuncOut": "es",
+	"boolOut": "false",
+	"compOut": "true"
+}

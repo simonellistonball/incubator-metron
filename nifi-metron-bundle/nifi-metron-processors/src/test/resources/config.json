@@ -1,0 +1,7 @@
+{
+	"fieldOut": "strField",
+	"calcOut": "intField * floatField",
+	"stringFuncOut": "SUBSTRING(strField, 1, 3)",
+	"boolOut": "intField == 1",
+	"compOut": "floatField > 1.0"
+}
