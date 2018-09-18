@@ -119,7 +119,7 @@ The REST application can be accessed with the Swagger UI at http://host:port/swa
 
 ### Authentication
 
-The metron-rest module uses [Spring Security](http://projects.spring.io/spring-security/) for authentication, and supports LDAP based authentication and [Knox SSO](https://knox.apache.org/books/knox-1-1-0/user-guide.html#KnoxSSO+Setup+and+Configuration) based authentication using jwt tokens.
+The metron-rest module uses [Spring Security](http://projects.spring.io/spring-security/) for authentication, and supports LDAP based authentication and [Knox SSO](https://knox.apache.org/books/knox-0-12-0/user-guide.html#KnoxSSO+Setup+and+Configuration) based authentication using jwt tokens.
 
 To configure LDAP based application add the following to the rest_application.yml file (note, this would usually be done via the Ambari configuration interface):
 
